@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Carbon Footprint Calculator</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <!-- <li><a href="/dashboard">Dashboard</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <marquee behavior="left" direction="left">Think green! Think green!! Think green!!!</marquee>
+    <section class="calculator">
+        <h2 class="myh">Calculate Your Carbon Footprint</h2>
+        <form id="footprint-form">
+            <label for="energy">Energy Usage (kWh):</label>
+            <br><br>
+            <input type="number" id="energy" name="energy" required><br><br>
+
+            <label for="transport">Transportation (km/week):</label>
+            <br><br>
+            <input type="number" id="transport" name="transport" required>
+            <br><br>
+
+            <label for="diet">Diet Type:</label>
+            <br><br>
+            <select id="diet" name="diet">
+                <option value="omnivore">Omnivore</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+            </select><br><br>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <p id="result"></p>
+    </section>
+    <footer class="ft">
+        <p>&copy; 2024 Carbon Footprint Platform by INS GROUP 20. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
